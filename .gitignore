@@ -1,0 +1,15 @@
+.ipynb_checkpoints/
+.idea/
+old_notebooks/
+Data/Weather_Data/
+config/
+catboost_info/
+Data/buffer/
+Data/datasets/BTS_Trips/
+Data/All_County_Weather_2020-09-07.csv
+Data/All_County_Weather_2020-09-12.csv
+Data/All_County_Weather_2020-09-26.csv
+Data/All_County_Weather_2020-07-06.csv
+Data/All_County_Weather_2020-10-10.csv
+Data/All_County_Weather_2020-10-03.csv
+catboost_info/

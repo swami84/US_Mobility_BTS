@@ -1,0 +1,829 @@
+--------------------------------------------------------------------------------
+Codebook for NHGIS data file 'nhgis0010_ds239_20185_2018_county'
+--------------------------------------------------------------------------------
+ 
+Contents
+    - Data Summary
+    - Data Dictionary
+    - Citation and Use
+ 
+Additional documentation on NHGIS data sources is available at: 
+    https://www.nhgis.org/documentation/tabular-data 
+ 
+--------------------------------------------------------------------------------
+Data Summary
+--------------------------------------------------------------------------------
+ 
+Year:             2014-2018
+Geographic level: County (by State)
+Dataset:          2018 American Community Survey: 5-Year Data [2014-2018, Block Groups & Larger Areas]
+   NHGIS code:    2014_2018_ACS5a
+   NHGIS ID:      ds239
+Breakdown(s):     Geographic Subarea:
+                     Total area (00)
+Data type(s):     (E) Estimates
+                  (M) Margins of error
+ 
+Tables:
+ 
+1. Sex by Age
+   Universe:    Total population
+   Source code: B01001
+   NHGIS code:  AJWB
+ 
+2. Total Population
+   Universe:    Total population
+   Source code: B01003
+   NHGIS code:  AJWM
+ 
+3. Race
+   Universe:    Total population
+   Source code: B02001
+   NHGIS code:  AJWN
+ 
+4. Hispanic or Latino Origin by Race
+   Universe:    Total population
+   Source code: B03002
+   NHGIS code:  AJWV
+ 
+5. Hispanic or Latino Origin
+   Universe:    Total population
+   Source code: B03003
+   NHGIS code:  AJWW
+ 
+6. Means of Transportation to Work
+   Universe:    Workers 16 years and over
+   Source code: B08301
+   NHGIS code:  AJXC
+ 
+7. Travel Time to Work
+   Universe:    Workers 16 years and over who did not work at home
+   Source code: B08303
+   NHGIS code:  AJXE
+ 
+8. Ratio of Income to Poverty Level in the Past 12 Months
+   Universe:    Population for whom poverty status is determined
+   Source code: C17002
+   NHGIS code:  AJY4
+ 
+9. Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+   Universe:    Households
+   Source code: B19001
+   NHGIS code:  AJY9
+ 
+10. Median Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19013
+    NHGIS code:  AJZA
+ 
+11. Public Assistance Income or Food Stamps/SNAP in the Past 12 Months for Households
+    Universe:    Households
+    Source code: B19058
+    NHGIS code:  AJZV
+ 
+12. Per Capita Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Total population
+    Source code: B19301
+    NHGIS code:  AJ0E
+ 
+13. Employment Status for the Population 16 Years and Over
+    Universe:    Population 16 years and over
+    Source code: B23025
+    NHGIS code:  AJ1C
+ 
+14. Gross Rent as a Percentage of Household Income in the Past 12 Months
+    Universe:    Renter-occupied housing units
+    Source code: B25070
+    NHGIS code:  AJ3K
+ 
+15. Types of Health Insurance Coverage by Age
+    Universe:    Civilian noninstitutionalized population
+    Source code: B27010
+    NHGIS code:  AJ35
+ 
+--------------------------------------------------------------------------------
+Data Dictionary
+--------------------------------------------------------------------------------
+ 
+Context Fields 
+        GISJOIN:     GIS Join Match Code
+        YEAR:        Data File Year
+        REGIONA:     Region Code
+        DIVISIONA:   Division Code
+        STATE:       State Name
+        STATEA:      State Code
+        COUNTY:      County Name
+        COUNTYA:     County Code
+        COUSUBA:     County Subdivision Code
+        PLACEA:      Place Code
+        TRACTA:      Census Tract Code
+        BLKGRPA:     Block Group Code
+        CONCITA:     Consolidated City Code
+        AIANHHA:     American Indian Area/Alaska Native Area/Hawaiian Home Land Code
+        RES_ONLYA:   American Indian Area/Alaska Native Area (Reservation or Statistical Entity Only) Code
+        TRUSTA:      American Indian Area (Off-Reservation Trust Land Only)/Hawaiian Home Land Code
+        AITSCEA:     Tribal Subdivision/Remainder Code
+        ANRCA:       Alaska Native Regional Corporation Code
+        CBSAA:       Metropolitan Statistical Area/Micropolitan Statistical Area Code
+        CSAA:        Combined Statistical Area Code
+        METDIVA:     Metropolitan Division Code
+        NECTAA:      New England City and Town Area Code
+        CNECTAA:     Combined New England City and Town Area Code
+        NECTADIVA:   New England City and Town Area Division Code
+        UAA:         Urban Area Code
+        CDCURRA:     Congressional District (2019-2021, 116th Congress) Code
+        SLDUA:       State Legislative District (Upper Chamber) Code
+        SLDLA:       State Legislative District (Lower Chamber) Code
+        ZCTA5A:      5-Digit ZIP Code Tabulation Area Code
+        SUBMCDA:     Subminor Civil Division Code
+        SDELMA:      School District (Elementary)/Remainder Code
+        SDSECA:      School District (Secondary)/Remainder Code
+        SDUNIA:      School District (Unified)/Remainder Code
+        PUMA5A:      Public Use Microdata Sample Area (PUMA) Code
+        BTTRA:       Tribal Census Tract Code
+        BTBGA:       Tribal Block Group Code
+ 
+Data Type (E):
+    Estimates
+ 
+        NAME_E:      Area Name
+ 
+    Table 1:     Sex by Age
+    Universe:    Total population
+    Source code: B01001
+    NHGIS code:  AJWB
+        AJWBE001:    Total
+        AJWBE002:    Male
+        AJWBE003:    Male: Under 5 years
+        AJWBE004:    Male: 5 to 9 years
+        AJWBE005:    Male: 10 to 14 years
+        AJWBE006:    Male: 15 to 17 years
+        AJWBE007:    Male: 18 and 19 years
+        AJWBE008:    Male: 20 years
+        AJWBE009:    Male: 21 years
+        AJWBE010:    Male: 22 to 24 years
+        AJWBE011:    Male: 25 to 29 years
+        AJWBE012:    Male: 30 to 34 years
+        AJWBE013:    Male: 35 to 39 years
+        AJWBE014:    Male: 40 to 44 years
+        AJWBE015:    Male: 45 to 49 years
+        AJWBE016:    Male: 50 to 54 years
+        AJWBE017:    Male: 55 to 59 years
+        AJWBE018:    Male: 60 and 61 years
+        AJWBE019:    Male: 62 to 64 years
+        AJWBE020:    Male: 65 and 66 years
+        AJWBE021:    Male: 67 to 69 years
+        AJWBE022:    Male: 70 to 74 years
+        AJWBE023:    Male: 75 to 79 years
+        AJWBE024:    Male: 80 to 84 years
+        AJWBE025:    Male: 85 years and over
+        AJWBE026:    Female
+        AJWBE027:    Female: Under 5 years
+        AJWBE028:    Female: 5 to 9 years
+        AJWBE029:    Female: 10 to 14 years
+        AJWBE030:    Female: 15 to 17 years
+        AJWBE031:    Female: 18 and 19 years
+        AJWBE032:    Female: 20 years
+        AJWBE033:    Female: 21 years
+        AJWBE034:    Female: 22 to 24 years
+        AJWBE035:    Female: 25 to 29 years
+        AJWBE036:    Female: 30 to 34 years
+        AJWBE037:    Female: 35 to 39 years
+        AJWBE038:    Female: 40 to 44 years
+        AJWBE039:    Female: 45 to 49 years
+        AJWBE040:    Female: 50 to 54 years
+        AJWBE041:    Female: 55 to 59 years
+        AJWBE042:    Female: 60 and 61 years
+        AJWBE043:    Female: 62 to 64 years
+        AJWBE044:    Female: 65 and 66 years
+        AJWBE045:    Female: 67 to 69 years
+        AJWBE046:    Female: 70 to 74 years
+        AJWBE047:    Female: 75 to 79 years
+        AJWBE048:    Female: 80 to 84 years
+        AJWBE049:    Female: 85 years and over
+ 
+    Table 2:     Total Population
+    Universe:    Total population
+    Source code: B01003
+    NHGIS code:  AJWM
+        AJWME001:    Total
+ 
+    Table 3:     Race
+    Universe:    Total population
+    Source code: B02001
+    NHGIS code:  AJWN
+        AJWNE001:    Total
+        AJWNE002:    White alone
+        AJWNE003:    Black or African American alone
+        AJWNE004:    American Indian and Alaska Native alone
+        AJWNE005:    Asian alone
+        AJWNE006:    Native Hawaiian and Other Pacific Islander alone
+        AJWNE007:    Some other race alone
+        AJWNE008:    Two or more races
+        AJWNE009:    Two or more races: Two races including Some other race
+        AJWNE010:    Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 4:     Hispanic or Latino Origin by Race
+    Universe:    Total population
+    Source code: B03002
+    NHGIS code:  AJWV
+        AJWVE001:    Total
+        AJWVE002:    Not Hispanic or Latino
+        AJWVE003:    Not Hispanic or Latino: White alone
+        AJWVE004:    Not Hispanic or Latino: Black or African American alone
+        AJWVE005:    Not Hispanic or Latino: American Indian and Alaska Native alone
+        AJWVE006:    Not Hispanic or Latino: Asian alone
+        AJWVE007:    Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        AJWVE008:    Not Hispanic or Latino: Some other race alone
+        AJWVE009:    Not Hispanic or Latino: Two or more races
+        AJWVE010:    Not Hispanic or Latino: Two or more races: Two races including Some other race
+        AJWVE011:    Not Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+        AJWVE012:    Hispanic or Latino
+        AJWVE013:    Hispanic or Latino: White alone
+        AJWVE014:    Hispanic or Latino: Black or African American alone
+        AJWVE015:    Hispanic or Latino: American Indian and Alaska Native alone
+        AJWVE016:    Hispanic or Latino: Asian alone
+        AJWVE017:    Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        AJWVE018:    Hispanic or Latino: Some other race alone
+        AJWVE019:    Hispanic or Latino: Two or more races
+        AJWVE020:    Hispanic or Latino: Two or more races: Two races including Some other race
+        AJWVE021:    Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 5:     Hispanic or Latino Origin
+    Universe:    Total population
+    Source code: B03003
+    NHGIS code:  AJWW
+        AJWWE001:    Total
+        AJWWE002:    Not Hispanic or Latino
+        AJWWE003:    Hispanic or Latino
+ 
+    Table 6:     Means of Transportation to Work
+    Universe:    Workers 16 years and over
+    Source code: B08301
+    NHGIS code:  AJXC
+        AJXCE001:    Total
+        AJXCE002:    Car, truck, or van
+        AJXCE003:    Car, truck, or van: Drove alone
+        AJXCE004:    Car, truck, or van: Carpooled
+        AJXCE005:    Car, truck, or van: Carpooled: In 2-person carpool
+        AJXCE006:    Car, truck, or van: Carpooled: In 3-person carpool
+        AJXCE007:    Car, truck, or van: Carpooled: In 4-person carpool
+        AJXCE008:    Car, truck, or van: Carpooled: In 5- or 6-person carpool
+        AJXCE009:    Car, truck, or van: Carpooled: In 7-or-more-person carpool
+        AJXCE010:    Public transportation (excluding taxicab)
+        AJXCE011:    Public transportation (excluding taxicab): Bus or trolley bus
+        AJXCE012:    Public transportation (excluding taxicab): Streetcar or trolley car (carro publico in Puerto Rico)
+        AJXCE013:    Public transportation (excluding taxicab): Subway or elevated
+        AJXCE014:    Public transportation (excluding taxicab): Railroad
+        AJXCE015:    Public transportation (excluding taxicab): Ferryboat
+        AJXCE016:    Taxicab
+        AJXCE017:    Motorcycle
+        AJXCE018:    Bicycle
+        AJXCE019:    Walked
+        AJXCE020:    Other means
+        AJXCE021:    Worked at home
+ 
+    Table 7:     Travel Time to Work
+    Universe:    Workers 16 years and over who did not work at home
+    Source code: B08303
+    NHGIS code:  AJXE
+        AJXEE001:    Total
+        AJXEE002:    Less than 5 minutes
+        AJXEE003:    5 to 9 minutes
+        AJXEE004:    10 to 14 minutes
+        AJXEE005:    15 to 19 minutes
+        AJXEE006:    20 to 24 minutes
+        AJXEE007:    25 to 29 minutes
+        AJXEE008:    30 to 34 minutes
+        AJXEE009:    35 to 39 minutes
+        AJXEE010:    40 to 44 minutes
+        AJXEE011:    45 to 59 minutes
+        AJXEE012:    60 to 89 minutes
+        AJXEE013:    90 or more minutes
+ 
+    Table 8:     Ratio of Income to Poverty Level in the Past 12 Months
+    Universe:    Population for whom poverty status is determined
+    Source code: C17002
+    NHGIS code:  AJY4
+        AJY4E001:    Total
+        AJY4E002:    Under .50
+        AJY4E003:    .50 to .99
+        AJY4E004:    1.00 to 1.24
+        AJY4E005:    1.25 to 1.49
+        AJY4E006:    1.50 to 1.84
+        AJY4E007:    1.85 to 1.99
+        AJY4E008:    2.00 and over
+ 
+    Table 9:     Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19001
+    NHGIS code:  AJY9
+        AJY9E001:    Total
+        AJY9E002:    Less than $10,000
+        AJY9E003:    $10,000 to $14,999
+        AJY9E004:    $15,000 to $19,999
+        AJY9E005:    $20,000 to $24,999
+        AJY9E006:    $25,000 to $29,999
+        AJY9E007:    $30,000 to $34,999
+        AJY9E008:    $35,000 to $39,999
+        AJY9E009:    $40,000 to $44,999
+        AJY9E010:    $45,000 to $49,999
+        AJY9E011:    $50,000 to $59,999
+        AJY9E012:    $60,000 to $74,999
+        AJY9E013:    $75,000 to $99,999
+        AJY9E014:    $100,000 to $124,999
+        AJY9E015:    $125,000 to $149,999
+        AJY9E016:    $150,000 to $199,999
+        AJY9E017:    $200,000 or more
+ 
+    Table 10:    Median Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19013
+    NHGIS code:  AJZA
+        AJZAE001:    Median household income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 11:    Public Assistance Income or Food Stamps/SNAP in the Past 12 Months for Households
+    Universe:    Households
+    Source code: B19058
+    NHGIS code:  AJZV
+        AJZVE001:    Total
+        AJZVE002:    With cash public assistance or Food Stamps/SNAP
+        AJZVE003:    No cash public assistance or Food Stamps/SNAP
+ 
+    Table 12:    Per Capita Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Total population
+    Source code: B19301
+    NHGIS code:  AJ0E
+        AJ0EE001:    Per capita income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 13:    Employment Status for the Population 16 Years and Over
+    Universe:    Population 16 years and over
+    Source code: B23025
+    NHGIS code:  AJ1C
+        AJ1CE001:    Total
+        AJ1CE002:    In labor force
+        AJ1CE003:    In labor force: Civilian labor force
+        AJ1CE004:    In labor force: Civilian labor force: Employed
+        AJ1CE005:    In labor force: Civilian labor force: Unemployed
+        AJ1CE006:    In labor force: Armed Forces
+        AJ1CE007:    Not in labor force
+ 
+    Table 14:    Gross Rent as a Percentage of Household Income in the Past 12 Months
+    Universe:    Renter-occupied housing units
+    Source code: B25070
+    NHGIS code:  AJ3K
+        AJ3KE001:    Total
+        AJ3KE002:    Less than 10.0 percent
+        AJ3KE003:    10.0 to 14.9 percent
+        AJ3KE004:    15.0 to 19.9 percent
+        AJ3KE005:    20.0 to 24.9 percent
+        AJ3KE006:    25.0 to 29.9 percent
+        AJ3KE007:    30.0 to 34.9 percent
+        AJ3KE008:    35.0 to 39.9 percent
+        AJ3KE009:    40.0 to 49.9 percent
+        AJ3KE010:    50.0 percent or more
+        AJ3KE011:    Not computed
+ 
+    Table 15:    Types of Health Insurance Coverage by Age
+    Universe:    Civilian noninstitutionalized population
+    Source code: B27010
+    NHGIS code:  AJ35
+        AJ35E001:    Total
+        AJ35E002:    Under 19 years
+        AJ35E003:    Under 19 years: With one type of health insurance coverage
+        AJ35E004:    Under 19 years: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35E005:    Under 19 years: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35E006:    Under 19 years: With one type of health insurance coverage: With Medicare coverage only
+        AJ35E007:    Under 19 years: With one type of health insurance coverage: With Medicaid/means-tested public coverage only
+        AJ35E008:    Under 19 years: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35E009:    Under 19 years: With one type of health insurance coverage: With VA Health Care only
+        AJ35E010:    Under 19 years: With two or more types of health insurance coverage
+        AJ35E011:    Under 19 years: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35E012:    Under 19 years: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35E013:    Under 19 years: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35E014:    Under 19 years: With two or more types of health insurance coverage: Other private only combinations
+        AJ35E015:    Under 19 years: With two or more types of health insurance coverage: Other public only combinations
+        AJ35E016:    Under 19 years: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35E017:    Under 19 years: No health insurance coverage
+        AJ35E018:    19 to 34 years
+        AJ35E019:    19 to 34 years: With one type of health insurance coverage
+        AJ35E020:    19 to 34 years: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35E021:    19 to 34 years: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35E022:    19 to 34 years: With one type of health insurance coverage: With Medicare coverage only
+        AJ35E023:    19 to 34 years: With one type of health insurance coverage: With Medicaid/means-tested public coverage only
+        AJ35E024:    19 to 34 years: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35E025:    19 to 34 years: With one type of health insurance coverage: With VA Health Care only
+        AJ35E026:    19 to 34 years: With two or more types of health insurance coverage
+        AJ35E027:    19 to 34 years: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35E028:    19 to 34 years: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35E029:    19 to 34 years: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35E030:    19 to 34 years: With two or more types of health insurance coverage: Other private only combinations
+        AJ35E031:    19 to 34 years: With two or more types of health insurance coverage: Other public only combinations
+        AJ35E032:    19 to 34 years: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35E033:    19 to 34 years: No health insurance coverage
+        AJ35E034:    35 to 64 years
+        AJ35E035:    35 to 64 years: With one type of health insurance coverage
+        AJ35E036:    35 to 64 years: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35E037:    35 to 64 years: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35E038:    35 to 64 years: With one type of health insurance coverage: With Medicare coverage only
+        AJ35E039:    35 to 64 years: With one type of health insurance coverage: With Medicaid/means-tested public coverage only
+        AJ35E040:    35 to 64 years: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35E041:    35 to 64 years: With one type of health insurance coverage: With VA Health Care only
+        AJ35E042:    35 to 64 years: With two or more types of health insurance coverage
+        AJ35E043:    35 to 64 years: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35E044:    35 to 64 years: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35E045:    35 to 64 years: With two or more types of health insurance coverage: With direct-purchase and Medicare coverage
+        AJ35E046:    35 to 64 years: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35E047:    35 to 64 years: With two or more types of health insurance coverage: Other private only combinations
+        AJ35E048:    35 to 64 years: With two or more types of health insurance coverage: Other public only combinations
+        AJ35E049:    35 to 64 years: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35E050:    35 to 64 years: No health insurance coverage
+        AJ35E051:    65 years and over
+        AJ35E052:    65 years and over: With one type of health insurance coverage
+        AJ35E053:    65 years and over: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35E054:    65 years and over: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35E055:    65 years and over: With one type of health insurance coverage: With Medicare coverage only
+        AJ35E056:    65 years and over: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35E057:    65 years and over: With one type of health insurance coverage: With VA Health Care only
+        AJ35E058:    65 years and over: With two or more types of health insurance coverage
+        AJ35E059:    65 years and over: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35E060:    65 years and over: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35E061:    65 years and over: With two or more types of health insurance coverage: With direct-purchase and Medicare coverage
+        AJ35E062:    65 years and over: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35E063:    65 years and over: With two or more types of health insurance coverage: Other private only combinations
+        AJ35E064:    65 years and over: With two or more types of health insurance coverage: Other public only combinations
+        AJ35E065:    65 years and over: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35E066:    65 years and over: No health insurance coverage
+ 
+Data Type (M):
+    Margins of error
+ 
+        NAME_M:      Area Name
+ 
+    Table 1:     Sex by Age
+    Universe:    Total population
+    Source code: B01001
+    NHGIS code:  AJWB
+        AJWBM001:    Total
+        AJWBM002:    Male
+        AJWBM003:    Male: Under 5 years
+        AJWBM004:    Male: 5 to 9 years
+        AJWBM005:    Male: 10 to 14 years
+        AJWBM006:    Male: 15 to 17 years
+        AJWBM007:    Male: 18 and 19 years
+        AJWBM008:    Male: 20 years
+        AJWBM009:    Male: 21 years
+        AJWBM010:    Male: 22 to 24 years
+        AJWBM011:    Male: 25 to 29 years
+        AJWBM012:    Male: 30 to 34 years
+        AJWBM013:    Male: 35 to 39 years
+        AJWBM014:    Male: 40 to 44 years
+        AJWBM015:    Male: 45 to 49 years
+        AJWBM016:    Male: 50 to 54 years
+        AJWBM017:    Male: 55 to 59 years
+        AJWBM018:    Male: 60 and 61 years
+        AJWBM019:    Male: 62 to 64 years
+        AJWBM020:    Male: 65 and 66 years
+        AJWBM021:    Male: 67 to 69 years
+        AJWBM022:    Male: 70 to 74 years
+        AJWBM023:    Male: 75 to 79 years
+        AJWBM024:    Male: 80 to 84 years
+        AJWBM025:    Male: 85 years and over
+        AJWBM026:    Female
+        AJWBM027:    Female: Under 5 years
+        AJWBM028:    Female: 5 to 9 years
+        AJWBM029:    Female: 10 to 14 years
+        AJWBM030:    Female: 15 to 17 years
+        AJWBM031:    Female: 18 and 19 years
+        AJWBM032:    Female: 20 years
+        AJWBM033:    Female: 21 years
+        AJWBM034:    Female: 22 to 24 years
+        AJWBM035:    Female: 25 to 29 years
+        AJWBM036:    Female: 30 to 34 years
+        AJWBM037:    Female: 35 to 39 years
+        AJWBM038:    Female: 40 to 44 years
+        AJWBM039:    Female: 45 to 49 years
+        AJWBM040:    Female: 50 to 54 years
+        AJWBM041:    Female: 55 to 59 years
+        AJWBM042:    Female: 60 and 61 years
+        AJWBM043:    Female: 62 to 64 years
+        AJWBM044:    Female: 65 and 66 years
+        AJWBM045:    Female: 67 to 69 years
+        AJWBM046:    Female: 70 to 74 years
+        AJWBM047:    Female: 75 to 79 years
+        AJWBM048:    Female: 80 to 84 years
+        AJWBM049:    Female: 85 years and over
+ 
+    Table 2:     Total Population
+    Universe:    Total population
+    Source code: B01003
+    NHGIS code:  AJWM
+        AJWMM001:    Total
+ 
+    Table 3:     Race
+    Universe:    Total population
+    Source code: B02001
+    NHGIS code:  AJWN
+        AJWNM001:    Total
+        AJWNM002:    White alone
+        AJWNM003:    Black or African American alone
+        AJWNM004:    American Indian and Alaska Native alone
+        AJWNM005:    Asian alone
+        AJWNM006:    Native Hawaiian and Other Pacific Islander alone
+        AJWNM007:    Some other race alone
+        AJWNM008:    Two or more races
+        AJWNM009:    Two or more races: Two races including Some other race
+        AJWNM010:    Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 4:     Hispanic or Latino Origin by Race
+    Universe:    Total population
+    Source code: B03002
+    NHGIS code:  AJWV
+        AJWVM001:    Total
+        AJWVM002:    Not Hispanic or Latino
+        AJWVM003:    Not Hispanic or Latino: White alone
+        AJWVM004:    Not Hispanic or Latino: Black or African American alone
+        AJWVM005:    Not Hispanic or Latino: American Indian and Alaska Native alone
+        AJWVM006:    Not Hispanic or Latino: Asian alone
+        AJWVM007:    Not Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        AJWVM008:    Not Hispanic or Latino: Some other race alone
+        AJWVM009:    Not Hispanic or Latino: Two or more races
+        AJWVM010:    Not Hispanic or Latino: Two or more races: Two races including Some other race
+        AJWVM011:    Not Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+        AJWVM012:    Hispanic or Latino
+        AJWVM013:    Hispanic or Latino: White alone
+        AJWVM014:    Hispanic or Latino: Black or African American alone
+        AJWVM015:    Hispanic or Latino: American Indian and Alaska Native alone
+        AJWVM016:    Hispanic or Latino: Asian alone
+        AJWVM017:    Hispanic or Latino: Native Hawaiian and Other Pacific Islander alone
+        AJWVM018:    Hispanic or Latino: Some other race alone
+        AJWVM019:    Hispanic or Latino: Two or more races
+        AJWVM020:    Hispanic or Latino: Two or more races: Two races including Some other race
+        AJWVM021:    Hispanic or Latino: Two or more races: Two races excluding Some other race, and three or more races
+ 
+    Table 5:     Hispanic or Latino Origin
+    Universe:    Total population
+    Source code: B03003
+    NHGIS code:  AJWW
+        AJWWM001:    Total
+        AJWWM002:    Not Hispanic or Latino
+        AJWWM003:    Hispanic or Latino
+ 
+    Table 6:     Means of Transportation to Work
+    Universe:    Workers 16 years and over
+    Source code: B08301
+    NHGIS code:  AJXC
+        AJXCM001:    Total
+        AJXCM002:    Car, truck, or van
+        AJXCM003:    Car, truck, or van: Drove alone
+        AJXCM004:    Car, truck, or van: Carpooled
+        AJXCM005:    Car, truck, or van: Carpooled: In 2-person carpool
+        AJXCM006:    Car, truck, or van: Carpooled: In 3-person carpool
+        AJXCM007:    Car, truck, or van: Carpooled: In 4-person carpool
+        AJXCM008:    Car, truck, or van: Carpooled: In 5- or 6-person carpool
+        AJXCM009:    Car, truck, or van: Carpooled: In 7-or-more-person carpool
+        AJXCM010:    Public transportation (excluding taxicab)
+        AJXCM011:    Public transportation (excluding taxicab): Bus or trolley bus
+        AJXCM012:    Public transportation (excluding taxicab): Streetcar or trolley car (carro publico in Puerto Rico)
+        AJXCM013:    Public transportation (excluding taxicab): Subway or elevated
+        AJXCM014:    Public transportation (excluding taxicab): Railroad
+        AJXCM015:    Public transportation (excluding taxicab): Ferryboat
+        AJXCM016:    Taxicab
+        AJXCM017:    Motorcycle
+        AJXCM018:    Bicycle
+        AJXCM019:    Walked
+        AJXCM020:    Other means
+        AJXCM021:    Worked at home
+ 
+    Table 7:     Travel Time to Work
+    Universe:    Workers 16 years and over who did not work at home
+    Source code: B08303
+    NHGIS code:  AJXE
+        AJXEM001:    Total
+        AJXEM002:    Less than 5 minutes
+        AJXEM003:    5 to 9 minutes
+        AJXEM004:    10 to 14 minutes
+        AJXEM005:    15 to 19 minutes
+        AJXEM006:    20 to 24 minutes
+        AJXEM007:    25 to 29 minutes
+        AJXEM008:    30 to 34 minutes
+        AJXEM009:    35 to 39 minutes
+        AJXEM010:    40 to 44 minutes
+        AJXEM011:    45 to 59 minutes
+        AJXEM012:    60 to 89 minutes
+        AJXEM013:    90 or more minutes
+ 
+    Table 8:     Ratio of Income to Poverty Level in the Past 12 Months
+    Universe:    Population for whom poverty status is determined
+    Source code: C17002
+    NHGIS code:  AJY4
+        AJY4M001:    Total
+        AJY4M002:    Under .50
+        AJY4M003:    .50 to .99
+        AJY4M004:    1.00 to 1.24
+        AJY4M005:    1.25 to 1.49
+        AJY4M006:    1.50 to 1.84
+        AJY4M007:    1.85 to 1.99
+        AJY4M008:    2.00 and over
+ 
+    Table 9:     Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19001
+    NHGIS code:  AJY9
+        AJY9M001:    Total
+        AJY9M002:    Less than $10,000
+        AJY9M003:    $10,000 to $14,999
+        AJY9M004:    $15,000 to $19,999
+        AJY9M005:    $20,000 to $24,999
+        AJY9M006:    $25,000 to $29,999
+        AJY9M007:    $30,000 to $34,999
+        AJY9M008:    $35,000 to $39,999
+        AJY9M009:    $40,000 to $44,999
+        AJY9M010:    $45,000 to $49,999
+        AJY9M011:    $50,000 to $59,999
+        AJY9M012:    $60,000 to $74,999
+        AJY9M013:    $75,000 to $99,999
+        AJY9M014:    $100,000 to $124,999
+        AJY9M015:    $125,000 to $149,999
+        AJY9M016:    $150,000 to $199,999
+        AJY9M017:    $200,000 or more
+ 
+    Table 10:    Median Household Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Households
+    Source code: B19013
+    NHGIS code:  AJZA
+        AJZAM001:    Median household income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 11:    Public Assistance Income or Food Stamps/SNAP in the Past 12 Months for Households
+    Universe:    Households
+    Source code: B19058
+    NHGIS code:  AJZV
+        AJZVM001:    Total
+        AJZVM002:    With cash public assistance or Food Stamps/SNAP
+        AJZVM003:    No cash public assistance or Food Stamps/SNAP
+ 
+    Table 12:    Per Capita Income in the Past 12 Months (in 2018 Inflation-Adjusted Dollars)
+    Universe:    Total population
+    Source code: B19301
+    NHGIS code:  AJ0E
+        AJ0EM001:    Per capita income in the past 12 months (in 2018 inflation-adjusted dollars)
+ 
+    Table 13:    Employment Status for the Population 16 Years and Over
+    Universe:    Population 16 years and over
+    Source code: B23025
+    NHGIS code:  AJ1C
+        AJ1CM001:    Total
+        AJ1CM002:    In labor force
+        AJ1CM003:    In labor force: Civilian labor force
+        AJ1CM004:    In labor force: Civilian labor force: Employed
+        AJ1CM005:    In labor force: Civilian labor force: Unemployed
+        AJ1CM006:    In labor force: Armed Forces
+        AJ1CM007:    Not in labor force
+ 
+    Table 14:    Gross Rent as a Percentage of Household Income in the Past 12 Months
+    Universe:    Renter-occupied housing units
+    Source code: B25070
+    NHGIS code:  AJ3K
+        AJ3KM001:    Total
+        AJ3KM002:    Less than 10.0 percent
+        AJ3KM003:    10.0 to 14.9 percent
+        AJ3KM004:    15.0 to 19.9 percent
+        AJ3KM005:    20.0 to 24.9 percent
+        AJ3KM006:    25.0 to 29.9 percent
+        AJ3KM007:    30.0 to 34.9 percent
+        AJ3KM008:    35.0 to 39.9 percent
+        AJ3KM009:    40.0 to 49.9 percent
+        AJ3KM010:    50.0 percent or more
+        AJ3KM011:    Not computed
+ 
+    Table 15:    Types of Health Insurance Coverage by Age
+    Universe:    Civilian noninstitutionalized population
+    Source code: B27010
+    NHGIS code:  AJ35
+        AJ35M001:    Total
+        AJ35M002:    Under 19 years
+        AJ35M003:    Under 19 years: With one type of health insurance coverage
+        AJ35M004:    Under 19 years: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35M005:    Under 19 years: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35M006:    Under 19 years: With one type of health insurance coverage: With Medicare coverage only
+        AJ35M007:    Under 19 years: With one type of health insurance coverage: With Medicaid/means-tested public coverage only
+        AJ35M008:    Under 19 years: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35M009:    Under 19 years: With one type of health insurance coverage: With VA Health Care only
+        AJ35M010:    Under 19 years: With two or more types of health insurance coverage
+        AJ35M011:    Under 19 years: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35M012:    Under 19 years: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35M013:    Under 19 years: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35M014:    Under 19 years: With two or more types of health insurance coverage: Other private only combinations
+        AJ35M015:    Under 19 years: With two or more types of health insurance coverage: Other public only combinations
+        AJ35M016:    Under 19 years: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35M017:    Under 19 years: No health insurance coverage
+        AJ35M018:    19 to 34 years
+        AJ35M019:    19 to 34 years: With one type of health insurance coverage
+        AJ35M020:    19 to 34 years: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35M021:    19 to 34 years: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35M022:    19 to 34 years: With one type of health insurance coverage: With Medicare coverage only
+        AJ35M023:    19 to 34 years: With one type of health insurance coverage: With Medicaid/means-tested public coverage only
+        AJ35M024:    19 to 34 years: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35M025:    19 to 34 years: With one type of health insurance coverage: With VA Health Care only
+        AJ35M026:    19 to 34 years: With two or more types of health insurance coverage
+        AJ35M027:    19 to 34 years: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35M028:    19 to 34 years: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35M029:    19 to 34 years: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35M030:    19 to 34 years: With two or more types of health insurance coverage: Other private only combinations
+        AJ35M031:    19 to 34 years: With two or more types of health insurance coverage: Other public only combinations
+        AJ35M032:    19 to 34 years: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35M033:    19 to 34 years: No health insurance coverage
+        AJ35M034:    35 to 64 years
+        AJ35M035:    35 to 64 years: With one type of health insurance coverage
+        AJ35M036:    35 to 64 years: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35M037:    35 to 64 years: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35M038:    35 to 64 years: With one type of health insurance coverage: With Medicare coverage only
+        AJ35M039:    35 to 64 years: With one type of health insurance coverage: With Medicaid/means-tested public coverage only
+        AJ35M040:    35 to 64 years: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35M041:    35 to 64 years: With one type of health insurance coverage: With VA Health Care only
+        AJ35M042:    35 to 64 years: With two or more types of health insurance coverage
+        AJ35M043:    35 to 64 years: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35M044:    35 to 64 years: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35M045:    35 to 64 years: With two or more types of health insurance coverage: With direct-purchase and Medicare coverage
+        AJ35M046:    35 to 64 years: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35M047:    35 to 64 years: With two or more types of health insurance coverage: Other private only combinations
+        AJ35M048:    35 to 64 years: With two or more types of health insurance coverage: Other public only combinations
+        AJ35M049:    35 to 64 years: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35M050:    35 to 64 years: No health insurance coverage
+        AJ35M051:    65 years and over
+        AJ35M052:    65 years and over: With one type of health insurance coverage
+        AJ35M053:    65 years and over: With one type of health insurance coverage: With employer-based health insurance only
+        AJ35M054:    65 years and over: With one type of health insurance coverage: With direct-purchase health insurance only
+        AJ35M055:    65 years and over: With one type of health insurance coverage: With Medicare coverage only
+        AJ35M056:    65 years and over: With one type of health insurance coverage: With TRICARE/military health coverage only
+        AJ35M057:    65 years and over: With one type of health insurance coverage: With VA Health Care only
+        AJ35M058:    65 years and over: With two or more types of health insurance coverage
+        AJ35M059:    65 years and over: With two or more types of health insurance coverage: With employer-based and direct-purchase coverage
+        AJ35M060:    65 years and over: With two or more types of health insurance coverage: With employer-based and Medicare coverage
+        AJ35M061:    65 years and over: With two or more types of health insurance coverage: With direct-purchase and Medicare coverage
+        AJ35M062:    65 years and over: With two or more types of health insurance coverage: With Medicare and Medicaid/means-tested public coverage
+        AJ35M063:    65 years and over: With two or more types of health insurance coverage: Other private only combinations
+        AJ35M064:    65 years and over: With two or more types of health insurance coverage: Other public only combinations
+        AJ35M065:    65 years and over: With two or more types of health insurance coverage: Other coverage combinations
+        AJ35M066:    65 years and over: No health insurance coverage
+ 
+--------------------------------------------------------------------------------
+Citation and Use of NHGIS Data
+--------------------------------------------------------------------------------
+ 
+All persons are granted a limited license to use this documentation and the
+accompanying data, subject to the following conditions:
+
+* REDISTRIBUTION: You will not redistribute the data without permission.
+
+  You may publish a subset of the data to meet journal requirements for accessing 
+  data related to a particular publication. Contact us for permission for any other 
+  redistribution; we will consider requests for free and commercial redistribution.
+
+* CITATION: You will cite NHGIS appropriately.
+
+    * Publications and research reports employing NHGIS data (either tabular or GIS) 
+      should include the following citation:
+
+        Steven Manson, Jonathan Schroeder, David Van Riper, and Steven Ruggles. 
+        IPUMS National Historical Geographic Information System: Version 14.0 
+        [Database]. Minneapolis, MN: IPUMS. 2019. 
+        http://doi.org/10.18128/D050.V14.0
+
+    * Publications and research reports employing school attendance areas data 
+      (either tabular or GIS) must cite it appropriately. The citation should 
+      include the following:
+
+        The College of William and Mary and the Minnesota Population Center.
+        School Attendance Boundary Information System (SABINS): Version 1.0.
+        Minneapolis, MN: University of Minnesota 2011.
+
+    * For policy briefs, online resources, or articles in the popular press, we 
+      recommend that you cite the use of NHGIS data as follows:
+
+        IPUMS NHGIS, University of Minnesota, www.nhgis.org.
+
+    * If possible, citations involving school attendance areas should also include
+      the URL for the SABINS site:
+
+        http://www.sabinsdata.org/.
+
+These terms of use are a legally binding agreement. You can use the data only in 
+accordance with these terms, and any other use is a violation of the agreement. 
+Violations may result in revocation of the agreement and prohibition from using other 
+IPUMS data. If IPUMS or our partners are harmed from your violation, you are 
+responsible for all damages, including reasonable attorney's fees and expenses.
+        
+In addition, we request that users send us a copy of any publications, research
+reports, or educational material making use of the data or documentation.
+
+Send electronic material to: nhgis@umn.edu
+
+Printed matter should be sent to:
+
+    IPUMS NHGIS
+    Institute for Social Research and Data Innovation
+    University of Minnesota
+    50 Willey Hall
+    225 19th Ave S
+    Minneapolis, MN 55455
