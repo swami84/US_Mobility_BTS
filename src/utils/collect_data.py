@@ -48,14 +48,20 @@ class DataCollection():
 
         df_mobility['weekend'] = df_mobility['weekday'].apply(lambda x: self.weekend(x))
         df_mobility['month'] = df_mobility.date.dt.month_name()
-        df_mobility['Wk #'] = (df_mobility.date.dt.week.astype(str) ) #+ ' ' + (df_mobility.date.dt.year.astype(str) )
+        df_mobility['Wk #'] = (df_mobility.date.dt.week.astype(str) )
 
         trip_col = [col for col in df_mobility.columns if 'Number of' in col]
+
         avg_mil = np.array([0.5, 2, 4, 7.5, 17.5, 37.5, 75, 175, 375, 750])
+        abg_mil_short = np.array([0.5, 2, 4, 7.5, 17.5, 37.5, 0, 0, 0, 0])
         df_mobility['mobility_per_trip'] = np.sum(df_mobility[trip_col[1:]].multiply(avg_mil, axis=1), axis=1) / df_mobility[
             trip_col[0]]
         df_mobility['mobility_per_person'] = np.sum(df_mobility[trip_col[1:]].multiply(avg_mil, axis=1), axis=1) / (df_mobility['Population Staying at Home'] + df_mobility[
                                            'Population Not Staying at Home'])
+        df_mobility['mobility_per_trip_short'] = np.sum(df_mobility[trip_col[1:]].multiply(abg_mil_short, axis=1), axis=1) / \
+                                           df_mobility[trip_col[0]]
+        df_mobility['mobility_per_person_short'] = np.sum(df_mobility[trip_col[1:]].multiply(abg_mil_short, axis=1), axis=1) / (
+                    df_mobility['Population Staying at Home'] + df_mobility['Population Not Staying at Home'])
         df_mobility['pct_stay_home'] = df_mobility['Population Staying at Home'] * 100 / (df_mobility['Population Staying at Home'] + df_mobility[
                                            'Population Not Staying at Home'])
         df_mobility['trips_per_person'] = df_mobility['Number of Trips'] / (df_mobility['Population Not Staying at Home'] + df_mobility['Population Staying at Home'] )
@@ -334,7 +340,7 @@ class DataCollection():
 
     def combine_weather(self,df_mobility,df_covid):
         start_date = datetime.datetime.strftime(df_mobility.date.max(), '%Y-%m-%d')
-        fpath = './Data/All_County_Weather_' + start_date + '.csv'
+        fpath = './Data/datasets/Weather/All_County_Weather_' + start_date + '.csv'
         if os.path.exists(fpath):
             df_weather = pd.read_csv(fpath, parse_dates=['date'])
         else:
