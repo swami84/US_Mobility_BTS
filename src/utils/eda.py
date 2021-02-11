@@ -153,6 +153,7 @@ class DataAnalysis():
     def create_geo_json(self,df, col_name):
         geo_list = df.GEO_ID.unique()
         df = df[[col_name, 'GEO_ID', 'loc']]
+        
         df_geo = gpd.read_file('./Data/geometry/county.geojson', driver='GeoJSON')
         df_geo['GEO_ID'] = df_geo['GEO_ID'].astype(str).str[-5:]
         df_geo['GEO_ID'] = df_geo['GEO_ID'].apply(lambda x: self.filter_geo(geo_list, x))
