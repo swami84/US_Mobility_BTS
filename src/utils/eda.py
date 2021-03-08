@@ -47,7 +47,13 @@ class BindColormap(MacroElement):
 class DataAnalysis():
     if __name__ == '__main__':
         print('Data Analysis')
-        DataAnalysis()
+
+    def save_fig(self,fname):
+        output_path = './data/output/images/'
+        os.makedirs(output_path, exist_ok=True)
+        filename = output_path + fname + '.jpg'
+        plt.savefig(filename, bbox_inches='tight')
+
 
     def plot_metric(self,df_mob, var_list, rolling_mean=False, df_mob_rm=None,auto_y_lim=False):
         f, axes = plt.subplots(len(var_list), 1, sharex=True, figsize=(5 * len(var_list), 20))
@@ -56,12 +62,20 @@ class DataAnalysis():
             for var, ax in zip(var_list, axes.flatten()):
                 df_gr = df_mob.groupby(['fips', 'date'])[var].mean().unstack(level=0)
                 df_gr_rm = df_mob_rm.groupby(['fips', 'date'])[var].mean().unstack(level=0)
-                ax.plot(df_gr.index, df_gr.mean(axis=1).values, label='Daily Data')
-                ax.fill_between(df_gr.index, df_gr.mean(axis=1) - 0.5 * df_gr.std(axis=1),
-                                df_gr.mean(axis=1) + 0.5 * df_gr.std(axis=1), alpha=0.2)
-                ax.plot(df_gr_rm.index, df_gr_rm.mean(axis=1).values, color='red', label='7-day Moving Average')
-                ax.fill_between(df_gr_rm.index, df_gr_rm.mean(axis=1) - 0.5 * df_gr_rm.std(axis=1),
-                                df_gr_rm.mean(axis=1) + 0.5 * df_gr_rm.std(axis=1), alpha=0.2, color='red')
+                if var == 'Number of Trips':
+                    ax.plot(df_gr.index, df_gr.mean(axis=1).values, label='Daily Data')
+                    ax.fill_between(df_gr.index, df_gr.mean(axis=1) - 0.1 * df_gr.std(axis=1),
+                                    df_gr.mean(axis=1) + 0.1 * df_gr.std(axis=1), alpha=0.2)
+                    ax.plot(df_gr_rm.index, df_gr_rm.mean(axis=1).values, color='red', label='7-day Moving Average')
+                    ax.fill_between(df_gr_rm.index, df_gr_rm.mean(axis=1) - 0.1 * df_gr_rm.std(axis=1),
+                                    df_gr_rm.mean(axis=1) + 0.1 * df_gr_rm.std(axis=1), alpha=0.2, color='red')
+                else:
+                    ax.plot(df_gr.index, df_gr.mean(axis=1).values, label='Daily Data')
+                    ax.fill_between(df_gr.index, df_gr.mean(axis=1) - 0.5 * df_gr.std(axis=1),
+                                    df_gr.mean(axis=1) + 0.5 * df_gr.std(axis=1), alpha=0.2)
+                    ax.plot(df_gr_rm.index, df_gr_rm.mean(axis=1).values, color='red', label='7-day Moving Average')
+                    ax.fill_between(df_gr_rm.index, df_gr_rm.mean(axis=1) - 0.5 * df_gr_rm.std(axis=1),
+                                    df_gr_rm.mean(axis=1) + 0.5 * df_gr_rm.std(axis=1), alpha=0.2, color='red')
 
                 if not auto_y_lim:
                     ax.set_ylim(df_gr.mean(axis=1).mean() - 5 * df_gr_rm.mean(axis=1).std(),
@@ -182,7 +196,7 @@ class DataAnalysis():
         else:
             rgb = color.colors[value][:3]
         return str((matplotlib.colors.rgb2hex(rgb)))
-    def plot_map(self, col_list,df,save_op = False,cmap='plasma',q_filter=False,filter_level=[0.01,0.99]):
+    def plot_map(self, col_list,df,save_op = False,cmap='plasma',q_filter=False,filter_level=[0.01,0.99],name=None):
         us_cen = [43.8283, -98.5795]
         base_map = folium.Map(location=us_cen, zoom_start=4)
         maps, cs = [], []
@@ -199,13 +213,20 @@ class DataAnalysis():
         for m, col_sc in zip(maps, cs):
             base_map.add_child(BindColormap(m, col_sc))
         if save_op:
-            output_path = './data/output'
+            output_path = './data/output/maps/'
             os.makedirs(output_path,exist_ok=True)
             curr_date = str((datetime.datetime.today()).date())
-            rand_int = str(randint(0,100000000))
-            fpath = output_path + '/' + curr_date + '_' + rand_int + '.html'
+            fpath = output_path + '/' + curr_date +'_' + name +'.html'
             print('Saving file at ', fpath)
             base_map.save(fpath)
+            from selenium import webdriver
+            path = "../../webdrivers/chromedriver.exe"
+            driver = webdriver.Chrome(path)
+            html_path = 'file:///C:/Work/projects/mobility/US_Mobility_BTS/Data/output/maps/'+curr_date +'_' + name +'.html'
+            driver.get(html_path);
+            fname = './data/output/images/' + curr_date + '_' + name + '.jpg'
+            driver.save_screenshot(fname);
+            driver.quit();
         return base_map
 
 
