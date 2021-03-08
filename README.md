@@ -31,17 +31,13 @@ The trips data is released by [BTS](https://data.bts.gov/Research-and-Statistics
 
 ### Percentage of Country Population Staying At Home
 
-![Image 2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_COVID_monthly_weekday_weekend_bar.jpg)
+![Image 2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg)
 
 * Higher % stay at home during weekends (also true in 2019)
 
 * Lower % during summer/fall months
 
-<p float="left">
-  <img src="https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg" width="100" />
-  <img src="https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg" width="100" /> 
-  <img src="/https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg" width="100" />
-</p>
+
 
 ## County Level Insights
 ![Image 3](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_mobility_per_person.jpg)
