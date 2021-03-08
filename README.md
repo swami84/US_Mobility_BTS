@@ -25,7 +25,7 @@ Notes:
 
 3. Sharp drop at March 2020 due to nationwide restrictions and shutdown
 
-4. Increase in mobility/trips seen in Jun 2020 due to 
+4. Increase in mobility/trips seen in Jun 2020 due to easing/lifting restrictions
 
 ## County Level Insights
 ![Image 2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_mobility_per_person.jpg)
