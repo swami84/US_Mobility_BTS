@@ -37,7 +37,11 @@ The trips data is released by [BTS](https://data.bts.gov/Research-and-Statistics
 
 * Lower % during summer/fall months
 
-![alt-text-1](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg "title-1") ![alt-text-2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg "title-2")
+<p float="left">
+  <img src="https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg" width="100" />
+  <img src="https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg" width="100" /> 
+  <img src="/https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg" width="100" />
+</p>
 
 ## County Level Insights
 ![Image 3](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_mobility_per_person.jpg)
