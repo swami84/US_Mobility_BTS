@@ -17,20 +17,32 @@ The trips data is released by [BTS](https://data.bts.gov/Research-and-Statistics
 
 ## Country Level Time Series
 
+### Mobility Metrics vs Time 
+
 ![Image 1](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Metrics%20Plot%20Time%20Series.jpg)
-Notes:
-1. 7 day periodicity observed in all data due to weekday/weekend differences
 
-2. Lower mobility in winter months compared to summer months
+* 7 day periodicity observed in all data due to weekday/weekend differences
 
-3. Sharp drop observed at March 2020 due to nationwide restrictions and shutdown related to COVID
+* Lower mobility in winter months compared to summer months
 
-4. Increase in mobility/trips seen in Jun 2020 due to easing/lifting COVID based restrictions
+* Sharp drop observed at March 2020 due to nationwide restrictions and shutdown related to COVID
+
+* Increase in mobility/trips seen in Jun 2020 due to easing/lifting COVID based restrictions
+
+### Percentage of Country Population Staying At Home
+
+![Image 2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_COVID_monthly_weekday_weekend_bar.jpg)
+
+* Higher % stay at home during weekends (also true in 2019)
+
+* Lower % during summer/fall months
+
+![alt-text-1](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg "title-1") ![alt-text-2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/Percentage_population_home_comparison_2020vs2019_monthly.jpg "title-2")
 
 ## County Level Insights
-![Image 2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_mobility_per_person.jpg)
-![Image 3](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_pct_not_home.jpg)
-![Image 4](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_trips_per_person.jpg)
+![Image 3](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_mobility_per_person.jpg)
+![Image 4](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_pct_not_home.jpg)
+![Image 5](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_trips_per_person.jpg)
 
 ## Mobility Forecast
 
