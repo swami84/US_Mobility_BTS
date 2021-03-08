@@ -11,9 +11,8 @@ from matplotlib.colors import rgb2hex
 from branca.colormap import LinearColormap
 import datetime
 import os
-from random import randint
 from folium.plugins import TimeSliderChoropleth
-
+from PIL import Image, ImageFont, ImageDraw
 
 # Create a class to bind color maps to respective geojson maps
 
@@ -54,6 +53,13 @@ class DataAnalysis():
         filename = output_path + fname + '.jpg'
         plt.savefig(filename, bbox_inches='tight')
 
+    def annotate_img(self, fpath,text):
+        my_image = Image.open(fpath)
+        title_font = ImageFont.truetype('./config/American Captain.ttf', 60)
+        image_editable = ImageDraw.Draw(my_image)
+
+        image_editable.text((45, 150), text, (0, 0, 0), font=title_font)
+        my_image.save(fpath,format="png")
 
     def plot_metric(self,df_mob, var_list, rolling_mean=False, df_mob_rm=None,auto_y_lim=False):
         f, axes = plt.subplots(len(var_list), 1, sharex=True, figsize=(5 * len(var_list), 20))
@@ -223,10 +229,11 @@ class DataAnalysis():
             path = "../../webdrivers/chromedriver.exe"
             driver = webdriver.Chrome(path)
             html_path = 'file:///C:/Work/projects/mobility/US_Mobility_BTS/Data/output/maps/'+curr_date +'_' + name +'.html'
-            driver.get(html_path);
+            driver.get(html_path)
             fname = './data/output/images/' + curr_date + '_' + name + '.jpg'
-            driver.save_screenshot(fname);
-            driver.quit();
+            driver.save_screenshot(fname)
+            self.annotate_img(fname, name)
+            driver.quit()
         return base_map
 
 
