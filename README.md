@@ -6,7 +6,7 @@ It is critical to analyze and study the different aspects of population movement
 as it can provide meaningful insights to 
 
 1.	Understand spending and economical behavior to optimize business decisions such as marketing, staffing, advertising etc.
-2.	Curb disease spread. Mobility information has been heavily studied to track COVID-19 spread [[1][2]](#1#2)
+2.	Curb disease spread. Mobility information has been heavily studied to track COVID-19 spread [[1]](#1)[[2]](#2)
 3.	Better transport facilities and fleet / traffic management 
 4.	Better understanding on  population/location based characteristics on movement dynamics
 
