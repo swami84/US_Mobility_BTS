@@ -23,9 +23,9 @@ Notes:
 
 2. Lower mobility in winter months compared to summer months
 
-3. Sharp drop at March 2020 due to nationwide restrictions and shutdown
+3. Sharp drop observed at March 2020 due to nationwide restrictions and shutdown related to COVID
 
-4. Increase in mobility/trips seen in Jun 2020 due to easing/lifting restrictions
+4. Increase in mobility/trips seen in Jun 2020 due to easing/lifting COVID based restrictions
 
 ## County Level Insights
 ![Image 2](https://github.com/swami84/US_Mobility_BTS/blob/master/Data/output/images/2021-03-08_mean_pct_change_mobility_per_person.jpg)
